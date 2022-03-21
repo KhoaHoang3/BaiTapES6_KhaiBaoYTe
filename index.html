@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Làm bài tập đi nhé</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container container-glass">
+            <form method="POST" id="signup-form" class="signup-form" action="#">
+                <div>
+                    <h3>Thông tin khai báo y tế</h3>
+                    <fieldset>
+                        <h2>Khai báo y tế</h2>
+                        <p class="desc">Hãy điền thông tin khai báo bên dưới thật chính xác bạn nhé !</p>
+                        <div class="fieldset-content">
+                            <div class="form-row">
+                                <label class="form-label">Name</label>
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <input type="text" name="ten" id="ten" />
+                                        <span class="text-input">Tên</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="ho" id="ho" />
+                                        <span class="text-input">Họ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" id="email" />
+                                <span class="text-input">Ví dụ :<span> khaicybersoft@gmail.com</span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Số điện thoại</label>
+                                <input type="text" name="soDienThoai" id="soDienThoai" />
+                            </div>
+                            <div class="form-date">
+                                <label for="birth_date" class="form-label">Ngày tháng năm sinh</label>
+                                <div class="form-date-group">
+                                    <div class="form-date-item">
+                                        <input id="ngay" name="ngay"></input>
+                                        <span class="text-input">Ngày</span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <input id="thang" name="thang"></input>
+                                        <span class="text-input">Tháng</span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <input id="nam" name="nam"></input>
+                                        <span class="text-input">Năm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ssn" class="form-label">Địa chỉ</label>
+                                <input type="text" name="diaChi" id="diaChi" />
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <h3>Điền đầy đủ thông tin sau</h3>
+                    <fieldset>
+                        <h2>Thông tin đi lại di chuyển</h2>
+                        <div class="fieldset-content">
+                            <div class="form-group">
+                                <label for="thongTinDiChuyen" class="form-label">Bạn có tiếp xúc với người bị nghi nhiễm
+                                    covid19 không? Hãy mô tả thông tin đi lại của bạn bên dưới</label>
+                                <div class="form-find">
+                                    <input type="text" name="thongTinDiChuyen" id="thongTinDiChuyen"
+                                        placeholder="Thông tin di chuyển" />
+
+                                </div>
+                                
+                            </div>
+                            <div class="form-group ">
+                         
+                                        <label class="form-label">Bạn nghĩ bạn thuộc F mấy ?</label>
+                                        <br />
+                                        <div class="form-find " >
+                                            <select id="loaiNhiem" name="loaiNhiem" style="width: 100%;
+                                            display: block;
+                                            border: 1px solid #ebebeb;
+                                            height: 50px;
+                                            box-sizing: border-box;
+                                            padding: 0 20px;
+                                            color: #222;
+                                            font-weight: bold;
+                                            font-size: 14px;
+                                            font-family: 'Roboto Slab';">
+                                                <option>F0</option>
+                                                <option>F1</option>
+                                                <option>F2</option>
+                                                <option>HIV</option>
+                                            </select>
+                                      
+                                </div>
+                            </div>
+                            <div class="choose-bank">
+                                <p class="choose-bank-desc"></p>
+
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <h3>Cám ơn bạn đã điền đầy đủ thông tin</h3>
+                    <fieldset>
+                        <h2>Thông tin của bạn</h2>
+                        <div class="fieldset-content">
+                            <div class="donate-us">
+                               Dùng ES6 lấy thông tin từ người dùng nhập vào hiển thị bên dưới 
+                            </div>
+
+                            <div class="result">
+
+
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <style>
+      .fieldset-content .form-group .form-find select{ 
+          background-color: red !important;
+      }
+
+
+    </style>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
