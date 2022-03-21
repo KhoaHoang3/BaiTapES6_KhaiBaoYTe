@@ -1,2 +1,1 @@
-This template was made by Colorlib (https://colorlib.com)
-Please visit our website for more awesome templates, themes and tools. 
+Dạ mentor vào file index.js để kiểm tra code ạ
